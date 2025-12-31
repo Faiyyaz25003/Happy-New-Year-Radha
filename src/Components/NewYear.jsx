@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -8,68 +7,71 @@ import Image from "next/image";
 const pics = [
   {
     src: "/Radha1.jpeg",
-    text: "तेरी मुस्कान में है नए साल की रौनक, तेरे साथ हर पल है ज़िन्दगी का मक़सद। 🌟",
-    subtext: "Happy New Year, my love! तू है तो हर दिन जश्न है।",
+    text: "Teri muskaan mein hai naye saal ki raunak, tere saath har pal hai zindagi ka maksad. 🌟",
+    subtext: "Happy New Year, my love! Tu hai to har din jashn hai.",
   },
   {
     src: "/Radha2.jpeg",
-    text: "चाँद भी शर्माए तेरी हंसी देखकर, सितारे भी कहें 'वाह' तेरी अदा देखकर। ✨",
-    subtext: "2026 में भी बस तेरे साथ चलना है, हर खुशी तेरे संग पलना है।",
+    text: "Chaand bhi sharmaye teri hansi dekhkar, sitaare bhi kahein 'waah' teri ada dekhkar. ✨",
+    subtext:
+      "2026 mein bhi bas tere saath chalna hai, har khushi tere sang palna hai.",
   },
   {
     src: "/Radha3.jpeg",
-    text: "तेरी आंखों में खो जाऊं, तेरी बाहों में पा जाऊं, यही है मेरी नए साल की दुआ। 💫",
-    subtext: "हर नया दिन तेरे नाम, हर नई शाम तेरे संग।",
+    text: "Teri aankhon mein kho jaaun, teri baahon mein paa jaaun, yahi hai meri naye saal ki dua. 💫",
+    subtext: "Har naya din tere naam, har nayi shaam tere sang.",
   },
   {
     src: "/Radha4.jpeg",
-    text: "तू मेरी सुबह की पहली किरण, तू मेरी रात का आखिरी ख़्वाब। 💖",
-    subtext: "इस नए साल में भी बस तेरे प्यार में डूबा रहूं।",
+    text: "Tu meri subah ki pehli kiran, tu meri raat ka aakhri khwaab. 💖",
+    subtext: "Is naye saal mein bhi bas tere pyaar mein dooba rahun.",
   },
   {
     src: "/Radha5.jpeg",
-    text: "जब से तू मिली है, ज़िन्दगी एक ख़ूबसूरत सफ़र बन गई। 🌹",
-    subtext: "2026 में भी यूं ही साथ चलते रहें, हाथ में हाथ।",
+    text: "Jab se tu mili hai, zindagi ek khubsurat safar ban gayi. 🌹",
+    subtext: "2026 mein bhi yun hi saath chalte rahein, haath mein haath.",
   },
   {
     src: "/Radha6.jpeg",
-    text: "तेरी हर अदा पे फ़िदा हूं मैं, तेरी हर बात पे मरता हूं मैं। ✨",
-    subtext: "नया साल हो या पुराना, बस तू मेरी रहना।",
+    text: "Teri har ada pe fida hoon main, teri har baat pe marta hoon main. ✨",
+    subtext: "Naya saal ho ya purana, bas tu meri rahna.",
   },
   {
     src: "/Radha7.jpeg",
-    text: "तेरे बिना अधूरी है ये ज़िन्दगी, तेरे संग पूरी है हर ख़ुशी। 🌸",
-    subtext: "इस साल भी तेरे प्यार में यूं ही खोया रहूं।",
+    text: "Tere bina adhuri hai ye zindagi, tere sang puri hai har khushi. 🌸",
+    subtext: "Is saal bhi tere pyaar mein yun hi khoya rahun.",
   },
   {
     src: "/Radha8.jpeg",
-    text: "दिल कहता है तेरे पास रहूं, हर लम्हा तुझमें ही बस जाऊं। 💕",
-    subtext: "Happy New Year to my forever! तू ही मेरी मंज़िल है।",
+    text: "Dil kehta hai tere paas rahun, har lamha tujhmein hi bas jaaun. 💕",
+    subtext: "Happy New Year to my forever! Tu hi meri manzil hai.",
   },
   {
     src: "/Radha9.jpeg",
-    text: "तेरी यादों में खोया रहूं, तेरी बाहों में सोया रहूं। 🌙",
-    subtext: "2026 में भी बस तू और मैं, और प्यार की ये कहानी।",
+    text: "Teri yaadon mein khoya rahun, teri baahon mein soya rahun. 🌙",
+    subtext: "2026 mein bhi bas tu aur main, aur pyaar ki ye kahaani.",
   },
   {
     src: "/Radha10.jpeg",
-    text: "तेरी हंसी में है जन्नत का एहसास, तेरे संग हर पल है ख़ास। 😊",
-    subtext: "नए साल में भी यूं ही मुस्कुराती रहना, मैं हमेशा तेरे साथ हूं।",
+    text: "Teri hansi mein hai jannat ka ehsaas, tere sang har pal hai khaas. 😊",
+    subtext:
+      "Naye saal mein bhi yun hi muskurati rahna, main hamesha tere saath hoon.",
   },
   {
     src: "/Radha11.jpeg",
-    text: "तू मेरी ज़रूरत है, तू मेरी चाहत है, तू ही मेरी मोहब्बत है। 🤍",
-    subtext: "इस नए साल में भी, सिर्फ़ तेरे लिए धड़कूं।",
+    text: "Tu meri zaroorat hai, tu meri chaahat hai, tu hi meri mohabbat hai. 🤍",
+    subtext: "Is naye saal mein bhi, sirf tere liye dhadkun.",
   },
   {
     src: "/Radha12.jpeg",
-    text: "तेरे इश्क़ में पागल हूं मैं, तेरे प्यार का क़ैदी हूं मैं। 🔥",
-    subtext: "2026 भी तेरे नाम! Happy New Year, जान! 💝",
+    text: "Tere ishq mein paagal hoon main, tere pyaar ka qaidi hoon main. 🔥",
+    subtext: "2026 bhi tere naam! Happy New Year, jaan! 💝",
   },
   {
     src: "/Radha13.jpeg",
-    text: "तू है तो ज़िन्दगी रंगीन है, तेरे बिना सब कुछ अधूरा सा है। 🎆",
-    subtext: "नए साल में भी बस तेरे संग चलूं, तेरे ख़्वाबों में पलूं।",
+    text: "Tu hai to zindagi rangeen hai, tere bina sab kuch adhura sa hai. 🎆",
+    subtext:
+      "Naye saal mein bhi bas tere sang chalun, tere khwabon mein palun.",
   },
 ];
 
