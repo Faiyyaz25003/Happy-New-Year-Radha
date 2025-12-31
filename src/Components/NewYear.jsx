@@ -100,7 +100,7 @@ export default function NewYearPage() {
           return (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              className={`mt-[25px] absolute inset-0 transition-all duration-1000 ease-in-out ${
                 active
                   ? "opacity-100 translate-x-0 scale-100 z-10"
                   : "opacity-0 translate-x-10 scale-95"
